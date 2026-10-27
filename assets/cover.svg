@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="coverTitle coverDesc">
+  <title id="coverTitle">The Quiet Engine — ebook cover</title>
+  <desc id="coverDesc">Placeholder cover artwork: a dark book with an orange arc, the title The Quiet Engine, and the author name Rae Ellison.</desc>
+
+  <defs>
+    <linearGradient id="coverFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#232c39"/>
+      <stop offset="0.55" stop-color="#161b23"/>
+      <stop offset="1" stop-color="#0d1015"/>
+    </linearGradient>
+    <linearGradient id="pageBlock" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efe6d6"/>
+      <stop offset="1" stop-color="#d9cdb9"/>
+    </linearGradient>
+    <linearGradient id="arcGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a5b"/>
+      <stop offset="1" stop-color="#ff6b35"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="frontClip">
+      <rect x="238" y="92" width="374" height="520" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- cast shadow -->
+  <ellipse cx="420" cy="700" rx="230" ry="34" fill="#000" opacity="0.42" filter="url(#softShadow)"/>
+
+  <g transform="rotate(-5 420 440)">
+    <!-- page block (visible thickness on the right and bottom) -->
+    <path d="M604 96 L636 118 L636 622 L604 612 Z" fill="url(#pageBlock)"/>
+    <path d="M238 596 L604 578 L636 598 L268 620 Z" fill="#e6dccb"/>
+    <g stroke="#c9bda8" stroke-width="1" opacity="0.7">
+      <line x1="612" y1="130" x2="612" y2="600"/>
+      <line x1="620" y1="126" x2="620" y2="604"/>
+      <line x1="628" y1="122" x2="628" y2="608"/>
+      <line x1="300" y1="606" x2="600" y2="590"/>
+      <line x1="320" y1="610" x2="600" y2="596"/>
+    </g>
+
+    <!-- spine -->
+    <rect x="238" y="92" width="26" height="520" rx="6" fill="#0b0e12"/>
+    <rect x="238" y="92" width="10" height="520" rx="6" fill="#000" opacity="0.35"/>
+
+    <!-- front cover -->
+    <rect x="238" y="92" width="374" height="520" rx="8" fill="url(#coverFace)"/>
+
+    <g clip-path="url(#frontClip)">
+      <!-- orange arc accent -->
+      <circle cx="640" cy="210" r="175" fill="none" stroke="url(#arcGrad)" stroke-width="26" opacity="0.92"/>
+      <circle cx="640" cy="210" r="222" fill="none" stroke="url(#arcGrad)" stroke-width="4" opacity="0.45"/>
+      <!-- soft highlight -->
+      <rect x="238" y="92" width="374" height="520" fill="url(#coverFace)" opacity="0.08" style="mix-blend-mode:screen"/>
+    </g>
+
+    <!-- cover type -->
+    <g font-family="Georgia, 'Times New Roman', serif" fill="#ffffff">
+      <text x="290" y="300" font-size="46" letter-spacing="5">THE QUIET</text>
+      <text x="290" y="354" font-size="46" letter-spacing="5">ENGINE</text>
+    </g>
+    <rect x="290" y="386" width="84" height="5" fill="#ff6b35"/>
+
+    <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#e6e9ee" font-size="15" letter-spacing="2.4">
+      <text x="290" y="436">A PRACTICAL PLAYBOOK FOR</text>
+      <text x="290" y="462">BUILDING A PRODUCT THAT</text>
+      <text x="290" y="488">SELLS ITSELF</text>
+    </g>
+
+    <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ff6b35">
+      <rect x="290" y="530" width="10" height="10"/>
+      <text x="312" y="540" font-size="13" letter-spacing="2.6" fill="#cfd5de">NINE CHAPTERS</text>
+    </g>
+
+    <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#cfd5de">
+      <text x="290" y="580" font-size="18" letter-spacing="4">RAE ELLISON</text>
+    </g>
+  </g>
+</svg>

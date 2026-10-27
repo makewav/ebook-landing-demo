@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Engine — A Practical Playbook for Building a Product That Sells Itself</title>
+<meta name="description" content="The Quiet Engine is a 214-page playbook for turning a product people already like into a product that sells itself.">
+<meta name="robots" content="noindex,nofollow"><!-- demo page: keep out of search results -->
+<meta name="theme-color" content="#0f1115">
+
+<!-- TODO: replace the example.com URLs below (canonical, og:url, og:image) and the checkout URLs with the real production domain. -->
+<link rel="canonical" href="https://example.com/the-quiet-engine">
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="The Quiet Engine — A Practical Playbook for Building a Product That Sells Itself">
+<meta property="og:description" content="The Quiet Engine is a 214-page playbook for turning a product people already like into a product that sells itself.">
+<meta property="og:image" content="https://example.com/assets/cover.svg">
+<meta property="og:url" content="https://example.com/the-quiet-engine">
+<meta property="og:price:amount" content="29">
+<meta property="og:price:currency" content="USD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Quiet Engine — A Practical Playbook for Building a Product That Sells Itself">
+<meta name="twitter:description" content="The Quiet Engine is a 214-page playbook for turning a product people already like into a product that sells itself.">
+<meta name="twitter:image" content="https://example.com/assets/cover.svg">
+
+<link rel="icon" href="assets/cover.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+/* Motion opt-in. The pre-reveal (hidden) state is applied from this class
+   only, so if scripting is blocked, or the animation script at the end of
+   <body> never runs, the content stays visible. */
+document.documentElement.classList.add('js-reveal');
+window.setTimeout(function () {
+  if (!document.documentElement.classList.contains('reveal-ready')) {
+    document.documentElement.classList.remove('js-reveal');
+  }
+}, 2500);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Quiet Engine",
+  "alternateName": "The Quiet Engine — A Practical Playbook for Building a Product That Sells Itself",
+  "author": { "@type": "Person", "name": "Rae Ellison" },
+  "description": "The Quiet Engine is a 214-page playbook for turning a product people already like into a product that sells itself — one segment, one activation loop, one referral engine at a time.",
+  "inLanguage": "en",
+  "numberOfPages": 214,
+  "bookFormat": "https://schema.org/EBook",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://example.com/the-quiet-engine",
+    "price": "29",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2026-11-12"
+  }
+}
+</script>
+</head>
+
+<body>
+<div role="note" style="position:sticky;top:0;z-index:9999;background:#b3261e;color:#fff;font:600 13px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;padding:9px 14px;text-align:center;letter-spacing:.01em">
+  SAMPLE PAGE — design demo only. &ldquo;The Quiet Engine&rdquo;, the author, the reviews and the prices are placeholders. Nothing is for sale and the buy buttons do not work.
+</div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="#hero">The Quiet Engine</a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#inside">Inside</a></li>
+        <li><a href="#fit">Who it's for</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a href="#offer">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="site-nav__cta" href="#offer">Get The Quiet Engine — $29</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--accent">NEW — LAUNCH EDITION</p>
+
+        <h1 class="hero__title">Most products don't fail. They stall.</h1>
+
+        <p class="hero__subhead">The Quiet Engine is a 214-page playbook for turning a product people already like into a product that sells itself — one segment, one activation loop, one referral engine at a time.</p>
+
+        <p class="hero__body">Nine chapters, thirty templates, and a 90-day plan you can run solo. No growth team. No ad budget. No 12-month roadmap.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://example.com/checkout/ebook" data-price-launch="29" data-price-standard="49">Get The Quiet Engine — $29</a>
+          <a class="text-link" href="#inside">Preview the table of contents →</a>
+        </div>
+
+        <ul class="microcopy">
+          <li>214 pages</li>
+          <li>PDF, EPUB + Kindle</li>
+          <li>Instant delivery</li>
+          <li>30-day money-back guarantee</li>
+          <li>Free updates for life</li>
+        </ul>
+
+        <ul class="payment" aria-label="One-click checkout with Apple Pay, Google Pay, or credit card">
+          <li class="payment__item">
+            <svg class="payment__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path d="M16.9 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3.1-.7 1.4 0 1.9.7 3.1.7 1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.2-2.5 1.2-2.6-.1 0-2.3-.9-2.3-3.8z" fill="currentColor"/>
+              <path d="M14.9 5.6c.7-.8 1.1-1.9 1-3-1 .1-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.2-.5 2.8-1.4z" fill="currentColor"/>
+            </svg>
+            <span>Apple Pay</span>
+          </li>
+          <li class="payment__item">
+            <svg class="payment__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 12a4 4 0 1 1-1.6-3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Google Pay</span>
+          </li>
+          <li class="payment__item">
+            <svg class="payment__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M2.5 10.5h19" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Credit card</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__art">
+        <p class="hero__badge" data-launch-label>Launch price ends Nov 12, 2026</p>
+        <img class="hero__cover" src="assets/cover.svg" width="520" height="650"
+             alt="3D mockup of the ebook cover of The Quiet Engine: a dark book with an orange arc and the title in white lettering.">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. OUTCOMES ============ -->
+  <section class="section section--light" id="outcomes">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">What changes in the first 30 days</h2>
+        <p class="section__subhead">Four outcomes you can finish before the month is out — each one a working afternoon, not a strategy phase.</p>
+      </div>
+
+      <div class="outcome-grid">
+        <article class="outcome">
+          <span class="outcome__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" focusable="false">
+              <circle cx="16" cy="16" r="9"/>
+              <path d="M16 3v5M16 24v5M3 16h5M24 16h5"/>
+            </svg>
+          </span>
+          <h3 class="outcome__title">You name the one segment that's ready to buy now</h3>
+          <p class="outcome__body">Stop serving everyone. The book gives you a six-question filter that turns a fuzzy "small teams" idea into a named segment with a bought problem, a trigger event, and a budget.</p>
+          <p class="tag">Time to do it: ~1 hour</p>
+        </article>
+
+        <article class="outcome">
+          <span class="outcome__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" focusable="false">
+              <path d="M27 18a11 11 0 1 1-4-8"/>
+              <path d="M27 4v6h-6"/>
+            </svg>
+          </span>
+          <h3 class="outcome__title">You ship an activation loop, not a feature list</h3>
+          <p class="outcome__body">A repeatable path to first value in under five minutes, plus the seven events to instrument so you can see where users stall instead of guessing.</p>
+          <p class="tag">Time to do it: ~1 day</p>
+        </article>
+
+        <article class="outcome">
+          <span class="outcome__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" focusable="false">
+              <circle cx="8" cy="16" r="4"/>
+              <circle cx="24" cy="8" r="4"/>
+              <circle cx="24" cy="24" r="4"/>
+              <path d="M11.6 14.4 20.6 9.4M11.6 17.6 20.6 22.6"/>
+            </svg>
+          </span>
+          <h3 class="outcome__title">You turn ten customers into a referral channel</h3>
+          <p class="outcome__body">A referral mechanic, an ask script, and a thank-you sequence — plus where to place the ask so it doesn't cost you a seat.</p>
+          <p class="tag">Time to do it: ~2 hours</p>
+        </article>
+
+        <article class="outcome">
+          <span class="outcome__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M5 25l7-7 5 5L27 8"/>
+              <path d="M19 8h8v8"/>
+            </svg>
+          </span>
+          <h3 class="outcome__title">You price for expansion instead of discounting</h3>
+          <p class="outcome__body">Two pricing pages to rewrite: one that stops selling seats and starts selling a result, and one that makes the upgrade obvious.</p>
+          <p class="tag">Time to do it: ~1 day</p>
+        </article>
+      </div>
+
+      <ul class="stat-strip">
+        <li class="stat"><span class="stat__number">214</span><span class="stat__label">pages</span></li>
+        <li class="stat"><span class="stat__number">30</span><span class="stat__label">templates</span></li>
+        <li class="stat"><span class="stat__number">9</span><span class="stat__label">chapters</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 3. INSIDE THE BOOK ============ -->
+  <section class="section section--tint" id="inside">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Inside The Quiet Engine</h2>
+        <p class="section__subhead">Nine chapters, in order, each ending with something you can use the same afternoon.</p>
+      </div>
+
+      <ol class="chapters">
+        <li class="chapter">
+          <p class="chapter__number">01</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Find the segment that's already buying</h3>
+            <p class="chapter__promise">define your narrowest buyable market, the trigger event that starts a search, and what "ready now" sounds like in their words.</p>
+            <ul class="chapter__points">
+              <li>Define your narrowest buyable market</li>
+              <li>The trigger event that starts a search</li>
+              <li>What "ready now" sounds like in their words</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">02</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Say the thing in one sentence</h3>
+            <p class="chapter__promise">a positioning line formula, three worked examples, and the ten adjectives to delete from your homepage.</p>
+            <ul class="chapter__points">
+              <li>A positioning line formula</li>
+              <li>Three worked examples</li>
+              <li>The ten adjectives to delete from your homepage</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">03</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Build the activation loop</h3>
+            <p class="chapter__promise">define the "aha" moment, cut it to five minutes, and remove the four setup steps that quietly kill it.</p>
+            <ul class="chapter__points">
+              <li>Define the "aha" moment</li>
+              <li>Cut it to five minutes</li>
+              <li>Remove the four setup steps that quietly kill it</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">04</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Instrument what people do</h3>
+            <p class="chapter__promise">the seven events that matter, the three dashboards that replace the eleven nobody checks.</p>
+            <ul class="chapter__points">
+              <li>The seven events that matter</li>
+              <li>The three dashboards that replace the eleven nobody checks</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">05</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Make the first week work</h3>
+            <p class="chapter__promise">onboarding that installs the habit, the day-two and day-seven emails, and the check-in that prevents churn before it starts.</p>
+            <ul class="chapter__points">
+              <li>Onboarding that installs the habit</li>
+              <li>The day-two and day-seven emails</li>
+              <li>The check-in that prevents churn before it starts</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">06</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Earn the second order</h3>
+            <p class="chapter__promise">renewal triggers, expansion plays, and the price-change conversation script.</p>
+            <ul class="chapter__points">
+              <li>Renewal triggers</li>
+              <li>Expansion plays</li>
+              <li>The price-change conversation script</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">07</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Turn happy customers into a channel</h3>
+            <p class="chapter__promise">the referral mechanic, the ask script, and the referral thank-you that keeps them.</p>
+            <ul class="chapter__points">
+              <li>The referral mechanic</li>
+              <li>The ask script</li>
+              <li>The referral thank-you that keeps them</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">08</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Write the update, not the launch</h3>
+            <p class="chapter__promise">a 90-day release cadence, a changelog habit, and what to send when you ship nothing.</p>
+            <ul class="chapter__points">
+              <li>A 90-day release cadence</li>
+              <li>A changelog habit</li>
+              <li>What to send when you ship nothing</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="chapter">
+          <p class="chapter__number">09</p>
+          <div class="chapter__body">
+            <h3 class="chapter__title">Run the engine</h3>
+            <p class="chapter__promise">a 30/60/90 plan, the weekly ninety-minute review, and the scorecard that says whether the engine is compounding.</p>
+            <ul class="chapter__points">
+              <li>A 30/60/90 plan</li>
+              <li>The weekly ninety-minute review</li>
+              <li>The scorecard that says whether the engine is compounding</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <ul class="spec-strip">
+        <li class="spec-strip__item"><strong>214 pages</strong></li>
+        <li class="spec-strip__item"><strong>30 templates &amp; worksheets</strong></li>
+        <li class="spec-strip__item"><strong>14 diagrams</strong></li>
+        <li class="spec-strip__item"><strong>EPUB + Kindle + PDF</strong></li>
+      </ul>
+
+      <div class="section__cta">
+        <a class="btn btn--primary" href="https://example.com/checkout/ebook" data-price-launch="29" data-price-standard="49">Get The Quiet Engine — $29</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. WHO IT'S FOR ============ -->
+  <section class="section section--light" id="fit">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Whether The Quiet Engine is for you</h2>
+      </div>
+
+      <div class="fit-grid">
+        <div class="fit fit--yes">
+          <h3 class="fit__title">This book is for you if</h3>
+          <ul class="fit__list">
+            <li><span class="fit__mark fit__mark--check" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+            </span>You're the founder, head of product, or head of marketing at a company under 30 people.</li>
+            <li><span class="fit__mark fit__mark--check" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+            </span>You have real customers, but growth is manual and you own it.</li>
+            <li><span class="fit__mark fit__mark--check" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+            </span>You don't have a growth team, a brand budget, or a year to wait on a roadmap.</li>
+            <li><span class="fit__mark fit__mark--check" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+            </span>You've shipped something and you're tired of the second month being flat.</li>
+            <li><span class="fit__mark fit__mark--check" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+            </span>You want a system you can run solo, this quarter.</li>
+          </ul>
+          <p class="fit__qualifier">If you read every point on the left and felt your chest tighten, this was written for you.</p>
+        </div>
+
+        <div class="fit fit--no">
+          <h3 class="fit__title">It's not for you if</h3>
+          <ul class="fit__list">
+            <li><span class="fit__mark fit__mark--dash" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" focusable="false"><path d="M4 10h12"/></svg>
+            </span>You're pre-revenue and looking for a complete go-to-market from zero.</li>
+            <li><span class="fit__mark fit__mark--dash" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" focusable="false"><path d="M4 10h12"/></svg>
+            </span>You're a funded enterprise with a demand-gen team and a brand budget.</li>
+            <li><span class="fit__mark fit__mark--dash" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" focusable="false"><path d="M4 10h12"/></svg>
+            </span>You want a step-by-step ad playbook — this book assumes organic, product-led, and word-of-mouth channels.</li>
+          </ul>
+          <p class="fit__qualifier">If you're on the right, save yourself the $29 and hire a consultant for a week.</p>
+        </div>
+      </div>
+
+      <p class="fit__mini-cta"><a class="text-link" href="#faq">Not sure? Read the FAQ →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ 5. AUTHOR ============ -->
+  <section class="section section--tint" id="author">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Written by someone who has run this before</h2>
+      </div>
+
+      <div class="author">
+        <div class="author__identity">
+          <!-- TODO: replace this placeholder portrait with the real author headshot (160px, circular). -->
+          <svg class="author__headshot" role="img" aria-label="Placeholder portrait of Rae Ellison" viewBox="0 0 160 160" width="160" height="160">
+            <circle cx="80" cy="80" r="80" fill="#e3e7ec"/>
+            <circle cx="80" cy="63" r="26" fill="#aeb6c0"/>
+            <path d="M24 152a56 56 0 0 1 112 0z" fill="#aeb6c0"/>
+          </svg>
+          <p class="author__name">Rae Ellison</p>
+          <p class="author__role">Founder, Quiet Engine Co. — formerly VP Product, Looplane</p>
+          <!-- TODO: replace this placeholder signature with the real handwritten signature image. -->
+          <svg class="author__signature" role="img" aria-label="Handwritten signature of Rae Ellison" viewBox="0 0 240 80" width="220" height="73">
+            <path d="M12 58c14-30 22-42 28-42 6 0 2 30 8 30 5 0 12-22 18-22 5 0 1 20 7 20 5 0 14-18 18-18 4 0 0 14 6 14 5 0 14-12 18-12 4 0 4 8 10 8 8 0 18-10 26-16 6-4 10-6 12-4 3 3-10 12-4 16 6 4 16 2 22-2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M96 62c18-6 34-14 48-24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <p class="author__more"><a class="text-link" href="#" data-placeholder="author-archive">More from Rae →</a></p>
+        </div>
+
+        <div class="author__detail">
+          <p class="author__bio">I spent nine years watching products die of attention, not of quality. Since 2021 I've helped 40 small software teams build the loop that turns a first sale into a steady one. I wrote The Quiet Engine because the playbook I kept re-teaching kept fitting on ten pages, and ten pages never changed anyone's quarter.</p>
+
+          <dl class="credentials">
+            <div class="credential">
+              <dt class="credential__label">Built</dt>
+              <dd class="credential__detail">Led product at Looplane from Series A to a 12,000-seat business; shipped the activation rewrite that cut 90-day churn from 31% to 14%.</dd>
+            </div>
+            <div class="credential">
+              <dt class="credential__label">Scaled</dt>
+              <dd class="credential__detail">Advises 40 founder-led teams between $200k and $8M ARR on activation, referral, and pricing.</dd>
+            </div>
+            <div class="credential">
+              <dt class="credential__label">Community</dt>
+              <dd class="credential__detail">Quiet Engine newsletter — 18,000 readers; 400+ founders answer questions for each other every month.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. SOCIAL PROOF (PLACEHOLDER — NO SOCIAL PROOF PUBLISHED) ============ -->
+  <section class="section section--light" id="proof" aria-label="Social proof">
+    <div class="container">
+      <div class="placeholder">
+        <p class="placeholder__text">[TODO: social proof — verified testimonials only]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. OFFER & PRICING ============ -->
+  <section class="section section--light" id="offer">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Two ways to get it</h2>
+        <p class="section__subhead">Read it alone, or bring the templates, the workshop, and the people who'll hold you to it.</p>
+      </div>
+
+      <div class="offer">
+        <h3 class="offer__title">What you get</h3>
+        <ul class="offer__list">
+          <li><span class="offer__check" aria-hidden="true">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+          </span>The Quiet Engine, 214 pages, PDF + EPUB + Kindle</li>
+          <li><span class="offer__check" aria-hidden="true">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+          </span>30 worksheets and templates</li>
+          <li><span class="offer__check" aria-hidden="true">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+          </span>14 diagrams and decision trees</li>
+          <li><span class="offer__check" aria-hidden="true">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+          </span>Lifetime updates</li>
+          <li><span class="offer__check" aria-hidden="true">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 10.5 8 14.5 16 6"/></svg>
+          </span>the 90-day plan in two formats</li>
+        </ul>
+      </div>
+
+      <div class="products">
+        <article class="product" aria-describedby="guarantee">
+          <h3 class="product__name">The Quiet Engine</h3>
+          <p class="product__subtitle">Complete ebook + all 30 templates</p>
+          <p class="product__price">
+            <span class="price-was">$49</span>
+            <span class="price-now" data-price-launch="29" data-price-standard="49">$29</span>
+          </p>
+          <p class="product__price-note" data-launch-label>Launch price, ends Nov 12, 2026</p>
+          <p class="product__price-note" data-standard-label hidden>Standard price</p>
+          <ul class="product__features">
+            <li>Full 214-page ebook</li>
+            <li>All 30 templates and worksheets</li>
+            <li>Lifetime updates</li>
+            <li>PDF, EPUB, Kindle</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="https://example.com/checkout/ebook" data-price-launch="29" data-price-standard="49">Get the ebook — $29</a>
+        </article>
+
+        <article class="product product--bundle" aria-describedby="guarantee">
+          <p class="product__badge">BEST VALUE</p>
+          <h3 class="product__name">Full Engine Pack</h3>
+          <p class="product__subtitle">Ebook + live workshop + quarterly calls</p>
+          <p class="product__price">
+            <span class="price-was">$129</span>
+            <span class="price-now" data-price-launch="79" data-price-standard="129">$79</span>
+          </p>
+          <p class="product__price-note" data-launch-label>Launch price, ends Nov 12, 2026</p>
+          <p class="product__price-note" data-standard-label hidden>Standard price</p>
+          <ul class="product__features">
+            <li>Everything in the ebook</li>
+            <li>2-hour live workshop, recorded</li>
+            <li>3 monthly teardown calls with the author</li>
+            <li>30 prompts for your own review cycles</li>
+            <li>Printable 90-day plan</li>
+            <li>Priority email answers</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="https://example.com/checkout/pack" data-price-launch="79" data-price-standard="129">Get the Full Engine Pack — $79</a>
+        </article>
+      </div>
+
+      <div class="bonuses" id="bonuses">
+        <article class="bonus">
+          <h3 class="bonus__name">The Segment Filter worksheet</h3>
+          <p class="bonus__value">$19 value</p>
+          <p class="pill">Free with launch</p>
+        </article>
+        <article class="bonus">
+          <h3 class="bonus__name">Activation Audit video walkthrough</h3>
+          <p class="bonus__value">$29 value</p>
+          <p class="pill">Free with launch</p>
+        </article>
+        <article class="bonus">
+          <h3 class="bonus__name">Quarterly teardown calls, 4 seats</h3>
+          <p class="bonus__value">$180 value</p>
+          <p class="pill">Free with launch</p>
+        </article>
+      </div>
+
+      <p class="anchor-line" id="anchor-line"><span class="price-was">$197</span> of material. $79 until Nov 12, 2026.</p>
+
+      <div class="guarantee" id="guarantee">
+        <span class="guarantee__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+            <path d="M16 3l10 4v8c0 7-4.2 11.6-10 14-5.8-2.4-10-7-10-14V7z"/>
+            <path d="M11 16.5l3.5 3.5L21 13"/>
+          </svg>
+        </span>
+        <div class="guarantee__text">
+          <p class="guarantee__headline">30 days</p>
+          <p class="guarantee__body">If it isn't the most useful $79 you've spent this year, email us and we'll refund it. Full refund. No forms. No retention maze. You'll keep the templates either way.</p>
+        </div>
+      </div>
+
+      <div class="deadline">
+        <p class="deadline__line" id="deadline-line">Launch pricing ends Nov 12, 2026. After that, the ebook returns to $49 and the pack to $129.</p>
+        <div class="countdown" id="countdown" aria-label="Time remaining until launch pricing ends on Nov 12, 2026">
+          <span class="countdown__unit"><span class="countdown__value" id="countdown-days">0</span><span class="countdown__label">days</span></span>
+          <span class="countdown__unit"><span class="countdown__value" id="countdown-hours">00</span><span class="countdown__label">hours</span></span>
+          <span class="countdown__unit"><span class="countdown__value" id="countdown-minutes">00</span><span class="countdown__label">minutes</span></span>
+          <span class="countdown__unit"><span class="countdown__value" id="countdown-seconds">00</span><span class="countdown__label">seconds</span></span>
+        </div>
+        <p class="deadline__ended" id="launch-ended" hidden>Launch pricing has ended — standard price below</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. FAQ ============ -->
+  <section class="section section--tint" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Questions people actually ask</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">What format do I get, and when?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>All three, instantly — PDF for printing and highlighting, EPUB for tablets, and Kindle for the reader you already own. Delivery lands in your inbox within a minute of checkout, and again as a backup link you can forward to a teammate.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">How long does it take to get through?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>About six hours for the core nine chapters; the templates take longer because you're filling them in with your own numbers. Most readers do thirty minutes a night for two weeks and start acting on chapter three.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">What's the refund policy?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Thirty days, full refund, one email. If you bought the pack and the live workshop date doesn't suit you, we'll refund the pack and let you keep the ebook.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">Does this replace hiring a growth person?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>No, but it does change the job description. You'll arrive at the hiring conversation knowing which parts of the work are a repeatable system and which genuinely need a person. Chapter nine tells you how to tell the difference.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">Do I get updates?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Yes, free, for life. The 2027 edition arrives as a new PDF and EPUB with everything that changed since launch; your copy stays in your library.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">Can I buy a team license?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Five-plus seats are available at checkout, priced per seat. The Full Engine Pack also includes four seats for the teardown calls as a launch bonus.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__summary">
+            <span class="faq-item__question">Is there anything left?</span>
+            <span class="faq-item__chevron" aria-hidden="true">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 8l5 5 5-5"/></svg>
+            </span>
+          </summary>
+          <div class="faq-item__answer">
+            <p>The chapter order, the templates, and the sheet. If it isn't in those two things, it isn't in this book.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="faq__contact"><a class="text-link" href="mailto:hello@quietengine.co">Prefer email? Send it to hello@quietengine.co</a></p>
+
+      <div class="section__cta">
+        <a class="btn btn--primary" href="https://example.com/checkout/ebook" data-price-launch="29" data-price-standard="49">Get The Quiet Engine — $29</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. FINAL CTA ============ -->
+  <section class="final-cta" id="final-cta">
+    <div class="container final-cta__inner">
+      <h2 class="final-cta__title">Read chapter one. Decide by lunch.</h2>
+      <p class="final-cta__line">Sixty pages from here, you'll know which segment to sell to next and why your last quarter felt flat.</p>
+      <a class="btn btn--primary final-cta__btn" href="https://example.com/checkout/ebook" data-price-launch="29" data-price-standard="49">Get The Quiet Engine — $29</a>
+      <p class="final-cta__micro">30-day money-back guarantee · Instant PDF, EPUB + Kindle · Free updates for life</p>
+      <p class="final-cta__email">Prefer email? <a href="mailto:hello@quietengine.co">Send it to hello@quietengine.co</a></p>
+      <p class="final-cta__legal">Prices in USD. Product and company names in reader testimonials and statistics are illustrative examples for this page spec unless you replace them with verified quotes.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__col site-footer__col--brand">
+      <p class="site-footer__brand">The Quiet Engine</p>
+      <p class="site-footer__tag">A Practical Playbook for Building a Product That Sells Itself</p>
+    </div>
+
+    <nav class="site-footer__col" aria-label="Product">
+      <h2 class="site-footer__title">Product</h2>
+      <ul class="site-footer__list">
+        <li><a href="#" data-placeholder="product-url">The Quiet Engine</a></li>
+        <li><a href="#" data-placeholder="product-url">Full Engine Pack</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site-footer__col" aria-label="Support">
+      <h2 class="site-footer__title">Support</h2>
+      <ul class="site-footer__list">
+        <li><a href="mailto:hello@quietengine.co">hello@quietengine.co</a></li>
+        <li><a href="#" data-placeholder="refund-policy-url">Refund policy</a></li>
+        <li><a href="#" data-placeholder="terms-url">Terms</a></li>
+        <li><a href="#" data-placeholder="privacy-url">Privacy</a></li>
+      </ul>
+    </nav>
+
+    <!-- TODO: replace with the real delivery / VAT / sales-tax note for digital products. -->
+    <p class="site-footer__note">[TODO: delivery and VAT / sales-tax note for digital products]</p>
+  </div>
+</footer>
+
+<script>
+/* The only script on the page: mobile nav toggle, scroll-reveal animation and
+   the launch countdown. No libraries, no network calls, no tracking. */
+(function () {
+  'use strict';
+
+  /* ---------- Mobile navigation ---------- */
+  var toggle = document.querySelector('[data-nav-toggle]');
+  var nav = document.getElementById('site-nav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      nav.classList.toggle('is-open', !isOpen);
+    });
+
+    nav.addEventListener('click', function (event) {
+      if (event.target.closest('a')) {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+      }
+    });
+  }
+
+  /* ---------- Scroll reveal (fade + rise) ---------- */
+  var REVEAL_GROUPS = [
+    '.outcome-grid', '.chapters', '.fit-grid', '.products', '.bonuses', '.faq'
+  ];
+  var REVEAL_BLOCKS = [
+    '.section__head', '.stat-strip', '.spec-strip', '.section__cta', '.fit__mini-cta',
+    '.author__identity', '.author__detail', '.placeholder', '.offer', '.anchor-line',
+    '.guarantee', '.deadline', '.faq__contact', '.final-cta__inner'
+  ];
+  var REVEAL_STEP = 60;      /* ms between cards in the same grid */
+  var REVEAL_MAX_STEPS = 5;  /* cap, so long lists never wait too long */
+
+  function prefersReducedMotion() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  function setupReveal() {
+    var root = document.documentElement;
+    var targets = [];
+
+    function mark(element, delay) {
+      element.classList.add('reveal');
+      element.style.setProperty('--reveal-delay', delay + 'ms');
+      targets.push(element);
+    }
+
+    if (!prefersReducedMotion()) {
+      var groups = document.querySelectorAll(REVEAL_GROUPS.join(', '));
+      for (var g = 0; g < groups.length; g++) {
+        var cards = groups[g].children;
+        for (var c = 0; c < cards.length; c++) {
+          mark(cards[c], Math.min(c, REVEAL_MAX_STEPS) * REVEAL_STEP);
+        }
+      }
+
+      var blocks = document.querySelectorAll(REVEAL_BLOCKS.join(', '));
+      for (var b = 0; b < blocks.length; b++) { mark(blocks[b], 0); }
+    }
+
+    if (!targets.length || !('IntersectionObserver' in window)) {
+      for (var t = 0; t < targets.length; t++) { targets[t].classList.add('is-revealed'); }
+      root.classList.add('reveal-ready');
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        var entry = entries[i];
+        if (!entry.isIntersecting) { continue; }
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target); /* reveal once, then stop watching */
+      }
+    }, { threshold: 0.08, rootMargin: '0px 0px -48px 0px' });
+
+    for (var o = 0; o < targets.length; o++) { observer.observe(targets[o]); }
+    root.classList.add('reveal-ready');
+  }
+
+  try {
+    setupReveal();
+  } catch (error) {
+    /* A motion bug must never hide the page. */
+    document.documentElement.classList.remove('js-reveal');
+  }
+
+  /* ---------- Launch countdown (frozen after Nov 12, 2026, 23:59 ET) ---------- */
+  var LAUNCH_END = new Date('2026-11-12T23:59:00-05:00').getTime();
+  var timer = document.getElementById('countdown');
+
+  if (!timer) { return; }
+
+  var daysEl = document.getElementById('countdown-days');
+  var hoursEl = document.getElementById('countdown-hours');
+  var minutesEl = document.getElementById('countdown-minutes');
+  var secondsEl = document.getElementById('countdown-seconds');
+
+  function pad(value) { return (value < 10 ? '0' : '') + value; }
+
+  function setText(node, value) { if (node) { node.textContent = value; } }
+
+  function setCountdownValue(node, value) {
+    if (!node || node.textContent === value) { return; }
+    node.textContent = value;
+    node.classList.remove('is-ticking');
+    void node.offsetWidth; /* restart the flip animation */
+    node.classList.add('is-ticking');
+  }
+
+  function endLaunch() {
+    timer.hidden = true;
+    setText(document.getElementById('launch-ended'), 'Launch pricing has ended — standard price below');
+    var ended = document.getElementById('launch-ended');
+    if (ended) { ended.hidden = false; }
+
+    var hidden = document.getElementById('deadline-line');
+    if (hidden) { hidden.hidden = true; }
+    var bonuses = document.getElementById('bonuses');
+    if (bonuses) { bonuses.hidden = true; }
+    var anchor = document.getElementById('anchor-line');
+    if (anchor) { anchor.hidden = true; }
+
+    var prices = document.querySelectorAll('[data-price-launch]');
+    for (var i = 0; i < prices.length; i++) {
+      var node = prices[i];
+      node.textContent = node.textContent.replace(
+        '$' + node.getAttribute('data-price-launch'),
+        '$' + node.getAttribute('data-price-standard')
+      );
+    }
+
+    var was = document.querySelectorAll('.price-was');
+    for (var j = 0; j < was.length; j++) { was[j].hidden = true; }
+
+    var launchLabels = document.querySelectorAll('[data-launch-label]');
+    for (var k = 0; k < launchLabels.length; k++) { launchLabels[k].hidden = true; }
+
+    var standardLabels = document.querySelectorAll('[data-standard-label]');
+    for (var m = 0; m < standardLabels.length; m++) { standardLabels[m].hidden = false; }
+
+    document.documentElement.setAttribute('data-launch-state', 'ended');
+  }
+
+  function tick() {
+    var remaining = LAUNCH_END - Date.now();
+
+    if (remaining <= 0) {
+      endLaunch();
+      return false;
+    }
+
+    setCountdownValue(daysEl, String(Math.floor(remaining / 86400000)));
+    setCountdownValue(hoursEl, pad(Math.floor(remaining % 86400000 / 3600000)));
+    setCountdownValue(minutesEl, pad(Math.floor(remaining % 3600000 / 60000)));
+    setCountdownValue(secondsEl, pad(Math.floor(remaining % 60000 / 1000)));
+    return true;
+  }
+
+  if (tick()) {
+    window.setInterval(tick, 1000);
+  }
+})();
+</script>
+
+</body>
+</html>
